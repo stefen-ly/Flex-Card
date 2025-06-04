@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Popular Courses</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- Nav Bar -->
     <header class="navbar">
       <div class="logo">REANMe</div>
       <nav>
@@ -29,166 +32,204 @@
     </header>
 
     <main>
-      <!-- Tittle -->
       <section class="header-section">
         <h1>Most Popular Courses</h1>
-        <p>Choose from hundreds of specialist organizations.</p>
+        <p>Choose from hundreds of specialist courses </p>
       </section>
 
-      <!-- Tab categories -->
       <div class="tabs">
         <ul>
-          <li><a href="#marketing-course">Marketing</a></li>
-          <li><a href="#cyber-course">Cyber Securety</a></li>
-          <li><a href="#web-course">Web Developement</a></li>
-          <li><a href="#programing-course">Programing</a></li>
-          <li><a href="#graphic-course">Graphic Design</a></li>
+          <li><a href="#" data-category="all" class="active">All</a></li>
+          <li><a href="#" data-category="marketing">Marketing</a></li>
+          <li><a href="#" data-category="cyber">Cyber Security</a></li>
+          <li><a href="#" data-category="web">Web Development</a></li>
+          <li><a href="#" data-category="programming">Programming</a></li>
+          <li><a href="#" data-category="graphic">Graphic Design</a></li>
         </ul>
       </div>
 
       <div class="card-container">
-             <div class="card border-md">
-    <div class="card-header">
-        <img class="thumbnail border-top-md" src="./img/Figma.png" alt="Angkor Wat">
-    </div>
-    <div class="card-body">
-        <div class="flex justify-between text-sm">
-            <span class="text-white p-5 border-md bg-orange">All Levels</span>
-            <i class="fa-solid fa-heart text-red"></i>
-        </div>
-        <h2 class="text-lg text-dark">Graphic Design Master class</h2>
-        <p class="text-gray text-md">How to become a graphic designer in 24 hours</p>
-        <div class="text-md">
-            <span class="text-orange" >
+        <div class="card" data-category="graphic">
+          <div class="card-header">
+            <img class="thumnail" src="./img/Figma.png" alt="Graphic Design Course" />
+          </div>
+          <div class="card-body">
+            <div class="flex justify-between text-sm">
+              <span class="level">All Levels</span>
+              <span class="text-red">
+                <i class="fa-solid fa-heart"> </i>
+              </span>
+              
+            </div>
+            <h2>Graphic Design Masterclasses</h2>
+            <p>
+              Master Adobe Photoshop, Illustrator, and Figma, 
+              and create stunning designs
+            </p>
+            <div class="rating text-sm">
+              <span>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-regular fa-star"></i>
-            </span>
-            <span class="text-gray">4.0/5.0m</span>
+              </span>
+              <span class="text-sm text-gray">4.2/5.0</span>
+            </div>
+            <hr class="text-gray" />
+            <div class="info">
+              <span class="text-red"
+                ><i class="fa-solid fa-clock"></i> 15 hours</span
+              >
+              <span class="text-orange"
+                ><i class="fa-solid fa-calendar-days"></i> 28 lectures</span
+              >
+            </div>
+          </div>
         </div>
-        <hr>
-        <div class="flex justify-between">
-            <span class="text-sm text-red">
-                <i class="fa-solid fa-clock"></i>
-                12 hours
-            </span>
-            <span class="text-sm text-orange">
-                <i class="fa-solid fa-calendar-days"></i>
-                23 lectures
-            </span>
-        </div>
-    </div>
-</div>
-             <div class="card border-md">
-    <div class="card-header">
-        <img class="thumbnail border-top-md" src="./img/Figma.png" alt="Angkor Wat">
-    </div>
-    <div class="card-body">
-        <div class="flex justify-between text-sm">
-            <span class="text-white p-5 border-md bg-orange">All Levels</span>
-            <i class="fa-solid fa-heart text-red"></i>
-        </div>
-        <h2 class="text-lg text-dark">Graphic Design Master class</h2>
-        <p class="text-gray text-md">How to become a graphic designer in 24 hours</p>
-        <div class="text-md">
-            <span class="text-orange" >
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-            </span>
-            <span class="text-gray">4.0/5.0m</span>
-        </div>
-        <hr>
-        <div class="flex justify-between">
-            <span class="text-sm text-red">
-                <i class="fa-solid fa-clock"></i>
-                12 hours
-            </span>
-            <span class="text-sm text-orange">
-                <i class="fa-solid fa-calendar-days"></i>
-                23 lectures
-            </span>
-        </div>
-    </div>
-</div>
-             <div class="card border-md">
-    <div class="card-header">
-        <img class="thumbnail border-top-md" src="./img/Figma.png" alt="Angkor Wat">
-    </div>
-    <div class="card-body">
-        <div class="flex justify-between text-sm">
-            <span class="text-white p-5 border-md bg-orange">All Levels</span>
-            <i class="fa-solid fa-heart text-red"></i>
-        </div>
-        <h2 class="text-lg text-dark">Graphic Design Master class</h2>
-        <p class="text-gray text-md">How to become a graphic designer in 24 hours</p>
-        <div class="text-md">
-            <span class="text-orange" >
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-            </span>
-            <span class="text-gray">4.0/5.0m</span>
-        </div>
-        <hr>
-        <div class="flex justify-between">
-            <span class="text-sm text-red">
-                <i class="fa-solid fa-clock"></i>
-                12 hours
-            </span>
-            <span class="text-sm text-orange">
-                <i class="fa-solid fa-calendar-days"></i>
-                23 lectures
-            </span>
-        </div>
-        
-    </div>
-</div>
 
-             <div class="card border-md">
-    <div class="card-header">
-        <img class="thumbnail border-top-md" src="./img/Figma.png" alt="Angkor Wat">
-    </div>
-    <div class="card-body">
-        <div class="flex justify-between text-sm">
-            <span class="text-white p-5 border-md bg-orange">All Levels</span>
-            <i class="fa-solid fa-heart text-red"></i>
-        </div>
-        <h2 class="text-lg text-dark">Graphic Design Master class</h2>
-        <p class="text-gray text-md">How to become a graphic designer in 24 hours</p>
-        <div class="text-md">
-            <span class="text-orange" >
+        <div class="card" data-category="web">
+          <div class="card-header">
+            <img src="./img/photoshop.png" alt="Web Development Course" />
+          </div>
+          <div class="card-body">
+            <div class="flex justify-between text-sm">
+              <span class="level">Intermediate</span>
+              <i class="fa-solid fa-heart text-red"></i>
+            </div>
+            <h2>Full Stack Web Development</h2>
+            <p>Learn React, Node.js, and MongoDB 
+              to build modern web applications
+            </p>
+            <div class="rating text-sm">
+              <span>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-regular fa-star"></i>
-            </span>
-            <span class="text-gray">4.0/5.0m</span>
+              </span>
+              <span class="text-sm text-gray">4.2/5.0</span>
+            </div>
+            <hr />
+            <div class="info">
+              <span class="text-red"
+                ><i class="fa-solid fa-clock"></i> 20 hours</span
+              >
+              <span class="text-orange"
+                ><i class="fa-solid fa-calendar-days"></i> 35 lectures</span
+              >
+            </div>
+          </div>
         </div>
-        <hr>
-        <div class="flex justify-between">
-            <span class="text-sm text-red">
-                <i class="fa-solid fa-clock"></i>
-                12 hours
-            </span>
-            <span class="text-sm text-orange">
-                <i class="fa-solid fa-calendar-days"></i>
-                23 lectures
-            </span>
+
+        <div class="card" data-category="cyber">
+          <div class="card-header">
+            <img src="./img/react.png" alt="Cyber Security Course" />
+          </div>
+          <div class="card-body">
+            <div class="flex justify-between text-sm">
+              <span class="level">Beginner</span>
+              <i class="fa-solid fa-heart text-red"></i>
+            </div>
+            <h2>Cyber Security Fundamentals</h2>
+            <p>Understand ethical hacking and network security</p>
+            <div class="rating text-sm">
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </span>
+              <span class="text-sm text-gray">4.2/5.0</span>
+            </div>
+            <hr />
+            <div class="info">
+              <span class="text-red"
+                ><i class="fa-solid fa-clock"></i> 10 hours</span
+              >
+              <span class="text-orange"
+                ><i class="fa-solid fa-calendar-days"></i> 20 lectures</span
+              >
+            </div>
+          </div>
         </div>
-    </div>
-</div>
+
+        <div class="card" data-category="marketing">
+          <div class="card-header">
+            <img src="./img/skect.png" alt="Marketing Course" />
+          </div>
+          <div class="card-body">
+            <div class="flex justify-between text-sm">
+              <span class="level">All Levels</span>
+              <i class="fa-solid fa-heart text-red"></i>
+            </div>
+            <h2>Digital Marketing <br> Mastery</h2>
+            <p>SEO, Social Media, and Content Marketing 
+              to boost your online presence
+            </p>
+            <div class="rating text-sm">
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </span>
+              <span class="text-sm text-gray">4.2/5.0</span>
+            </div>
+            <hr />
+            <div class="info">
+              <span class="text-red"
+                ><i class="fa-solid fa-clock"></i> 18 hours</span
+              >
+              <span class="text-orange"
+                ><i class="fa-solid fa-calendar-days"></i> 30 lectures</span
+              >
+            </div>
+          </div>
+        </div>
       </div>
-     
 
-      <div class="toTop"><a href="#top" class="back-to-top">↑</a></div>
+      <a href="#top" class="back-to-top">↑</a>
     </main>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const tabs = document.querySelectorAll(".tabs a");
+        const clearFilterBtn = document.querySelector("#clear-filter");
+        const cards = document.querySelectorAll(".card");
+
+        const resetFilter = () => {
+          tabs.forEach((t) => t.classList.remove("active"));
+          document.querySelector('.tabs a[data-category="all"]').classList.add("active");
+          cards.forEach((card) => {
+            card.style.display = "block";
+          });
+        };
+
+        tabs.forEach((tab) => {
+          tab.addEventListener("click", (e) => {
+            e.preventDefault();
+            tabs.forEach((t) => t.classList.remove("active"));
+            tab.classList.add("active");
+
+            const category = tab.getAttribute("data-category");
+ Mediator
+            cards.forEach((card) => {
+              const cardCategory = card.getAttribute("data-category");
+              card.style.display = category === "all" || cardCategory === category ? "block" : "none";
+            });
+          });
+        });
+
+        cards.forEach((card) => {
+          card.addEventListener("click", () => {
+            alert(`Enrolling in ${card.querySelector("h2").textContent}!`);
+          });
+        });
+      });
+    </script>
   </body>
 </html>
